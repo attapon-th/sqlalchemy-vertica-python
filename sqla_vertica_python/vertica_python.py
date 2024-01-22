@@ -308,7 +308,10 @@ class VerticaDialect(PGDialect):
         if is_identity:
             column_info['autoincrement'] = True
         if sequence:
-            column_info['sequence'] = dict(sequence)
+            try:
+                column_info['sequence'] = dict(sequence)
+            except (TypeError, ValueError):
+                pass
         return column_info
 
     @reflection.cache
