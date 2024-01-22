@@ -32,6 +32,7 @@ class VerticaDialect(PGDialect):
     supports_statement_cache = False
     
     ischema_names = {
+        'IDENTITY': sqltypes.INTEGER,
         'BINARY': sqltypes.BLOB,
         'VARBINARY': sqltypes.BLOB,
         'LONG VARBINARY': sqltypes.BLOB,
