@@ -1,7 +1,10 @@
-# Install from this project
-```bash
-pip install git+https://github.com/attapon-th/sqlalchemy-vertica-python.git
-```
+How to PIP Install from this project
+=========================
+
+.. code-block:: 
+
+    pip install git+https://github.com/attapon-th/sqlalchemy-vertica-python.git
+
 
 sqlalchemy-vertica-python
 =========================
